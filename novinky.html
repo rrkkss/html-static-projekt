@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<!-- hlavička -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="CZU Games herní web o zpravodajství z virtuálního světa!">
+    <meta name="keywords" content="CZU, games, hry">
+    <meta name="author" content="Holava + Malzer + Štědronská">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CZU Games</title>
+    <link href="css/reset.css" type="text/css" rel="stylesheet">
+    <!-- css pro ikonu burger menu a ikonu vyhledavani-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <!-- ovladani burger menu -->
+    <script src="js/javascript.js"></script>
+</head>
+
+<!-- hlavní obsah -->
+<body>
+    <header>
+        <nav>
+            <!-- navigace -->
+            <div class="topnav" id="myTopnav">
+                <a href="novinky.html" class="active">Novinky</a>
+                <a href="index.html">Úvod</a>            
+                <a href="recenze.html">Recenze</a>
+                <a href="redakce.html">Redakce</a>
+                <a href="kontakty.html">Kontakty</a>
+                <!-- burger menu -->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+
+                <!-- vyhledavaci tlacitko -->
+                <div class="search-container">
+                    <form action="vyhledani.html">
+                        <input type="text" placeholder="Vyhledej..." name="search">
+                        <label class="btn-submit-search" for="submit-search">Vyhledej!</label>
+                        <button type="submit" id="submit-search" name="submit-search">vyhledat <i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+    <h1>Novinky</h1>
+    <section class="obsah">
+        <div class="novinka-clanky">
+            <article>
+                <header>
+                    <h2 class="h2-mimo-index" id="clanek_n_1">Seriálové The Last of Us ukazuje hlavní hvězdy</h2>
+                </header>
+                <p>
+                    Natáčení seriálového The Last of Us z produkce HBO je v plném proudu a to znamená jen jedno! Úniky informací z placu!
+                    Ten nejnovější je dvojice fotek ukazující Pedra Pascala, Bellu Ramsey a Annu Torv! Hercům Joela a Ellie je tak konečně vidět do obličeje!
+                    Už se nemůžeme dočkat, až tenhle seriál dorazí na naše obrazovky…
+                </p>
+            </article>
+            
+            <figure>
+                <img src="pics/last-of-us-plac-01.jpg" alt="Pedra Pascala, Bellu Ramsey a Annu Torv" width="773" height="773">
+                <figcaption class="figcap">Pedra Pascala, Bellu Ramsey a Annu Torv</figcaption>
+            </figure>
+        </div>
+
+        <div class="komentare">
+            <!-- pridani komentare -->
+            <h3 class="h3-mimo-index">Přidejte komentář:</h3>
+            <div class="komentare-vnitrni">
+                <!-- formular pro odeslani -->
+                <form class="formular" action="komentare.html" method="POST">
+                    <label for="jmeno_c1">Zadejte jméno:</label><br>
+                    <input type="text" id="jmeno_c1" name="jmeno"><br>
+                    <label for="komentar-text_c1">Zadejte svůj komentář:</label><br>
+                    <input type="text" id="komentar-text_c1" name="komentar-text"><br>
+                    <input class="btn-komentar" type="submit" name="submit" value="Odeslat">
+                </form>
+            </div>
+            <!-- komentare uzivatelu -->
+            <h3 class="h3-mimo-index">Komentáře čtenářů:</h3>
+            <div class="komentare-vnitrni">
+                <!-- komentar #1 -->
+                <div class="komentare-vnitrni-uzivatel">
+                    <img class="avatar" src="pics/avatar.jpg" alt="avatar" width="32" height="32">
+                    <h4>Vladimír Trojan</h4>
+                    <h4>4.12.2021, 14:35 napsal:</h4>
+                </div>
+                <!-- rozdeleni mezi jmenem uzivatele a jeho komentarem -->
+                <div class="komentare-vnitrni-predel"><p></p></div>
+                <div class="komentare-vnitrni-komentar">
+                    <p>Toz to je paradni clanek clenstvo, sam horory nemusim, ale mozna se na to mrknu.</p>
+                </div>
+
+                <!-- vizualni predel mezi komentari -->
+                <div class="komentare-vnitrni-predel-2"><p></p></div>
+
+                <!-- komentar #2 -->
+                <div class="komentare-vnitrni-uzivatel">
+                    <img class="avatar" src="pics/avatar.jpg" alt="avatar" width="32" height="32">
+                    <h4>Frantiszek Frankowny</h4>
+                    <h4>3.12.2021, 18:21 napsal:</h4>
+                </div>
+                <!-- rozdeleni mezi jmenem uzivatele a jeho komentarem -->
+                <div class="komentare-vnitrni-predel"><p></p></div>
+                <div class="komentare-vnitrni-komentar">
+                    <p>
+                        Snad se to povede na úplně stejné úrovni, 
+                        jak se povedlo zangažovat tuhle sebranku na jejich vhodné role.
+                        Opravdu čekám dobrý výsledek a snad se ho dočkáme!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- prazdne misto jako vizualni rozdelovac -->
+        <div class="komentare-predel-mezi-clanky">
+            <p></p>
+        </div>
+
+        <div class="novinka-clanky">
+            <article>
+                <header>
+                    <h2 class="h2-mimo-index" id="clanek_n_2">Blizzard mění a zakazuje negativní emoty ve World of Warcraft</h2>
+                </header>
+                <p>
+                    O tom, že Blizzard se rozhodl z Classic verze MMO World of Warcraft odstranit emote plivání,
+                    jsme vám nedávno psali zde! Hráči si ale jednoduše našli nové způsoby, jak vyjádřit své pohrdání
+                    nad majiteli speciálního mounta za reálné peníze narušujícího onen classic pocit, kvůli kterému
+                    většina hráčů tuhle verzi World of Warcraftu hraje. Blizzard tak nově změní nebo odstraní hned 7 emotů,
+                    a to drool, cough, burp, fart, whistle, spit, moon, pounce a groan. Ty nepůjdou použít na hráče,
+                    nebo budou mít upravené efekty. Kick, stink, shake a moan budou ze hry úplně odstraněny.
+                    Oproti tomu přidají 4 nové pozitivní emoty, a to huzzah, magnificent, impressed a wince…
+                </p>
+            </article>
+            <figure>
+                <img src="pics/World-of-Warcraft-Shadowlands-800x500.jpg" alt="Členové redakce" width="800" height="500">
+                <figcaption class="figcap">Náhled postavy z World of Warcraft</figcaption>
+            </figure>
+        </div>
+
+        <div class="komentare">
+            <!-- pridani komentare -->
+            <h3 class="h3-mimo-index">Přidejte komentář:</h3>
+            <div class="komentare-vnitrni">
+                <!-- formular pro odeslani -->
+                <form class="formular" action="komentare.html" method="POST">
+                    <label for="jmeno_c2">Zadejte jméno:</label><br>
+                    <input type="text" id="jmeno_c2" name="jmeno"><br>
+                    <label for="komentar-text_c2">Zadejte svůj komentář:</label><br>
+                    <input type="text" id="komentar-text_c2" name="komentar-text"><br>
+                    <input class="btn-komentar" type="submit" name="submit" value="Odeslat">
+                </form>
+            </div>
+            <!-- komentare uzivatelu -->
+            <h3 class="h3-mimo-index">Komentáře čtenářů:</h3>
+            <div class="komentare-vnitrni">
+                <!-- komentar #1 -->
+                <div class="komentare-vnitrni-uzivatel">
+                    <img class="avatar" src="pics/avatar.jpg" alt="avatar" width="32" height="32">
+                    <h4>Bohuslav Svoboda Martinů</h4>
+                    <h4>7.12.2021, 6:35 napsal:</h4>
+                </div>
+                <!-- rozdeleni mezi jmenem uzivatele a jeho komentarem -->
+                <div class="komentare-vnitrni-predel"><p></p></div>
+                <div class="komentare-vnitrni-komentar">
+                    <p>Docela vtipne :D</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+    
+    <!-- patička -->
+    <footer>
+        <h3>© STUDENTSKÝ PROJEKT</h3>
+    </footer>
+
+</body>
+</html>

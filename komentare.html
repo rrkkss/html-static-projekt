@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<!-- hlavička -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="CZU Games herní web o zpravodajství z virtuálního světa!">
+    <meta name="keywords" content="CZU, games, hry">
+    <meta name="author" content="Holava + Malzer + Štědronská">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CZU Games</title>
+    <link href="css/reset.css" type="text/css" rel="stylesheet">
+    <!-- css pro ikonu burger menu a ikonu vyhledavani-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <!-- ovladani burger menu -->
+    <script src="js/javascript.js"></script>
+</head>
+
+<!-- hlavní obsah -->
+<body>
+    <header>
+        <nav>
+            <!-- navigace -->
+            <div class="topnav" id="myTopnav">
+                <a href="index.html" class="active">Úvod</a>
+                <a href="novinky.html">Novinky</a>
+                <a href="recenze.html">Recenze</a>
+                <a href="redakce.html">Redakce</a>
+                <a href="kontakty.html">Kontakty</a>
+                <!-- burger menu -->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+
+                <div class="search-container">
+                    <form action="vyhledani.html">
+                        <input type="text" placeholder="Vyhledej..." name="search">
+                        <label class="btn-submit-search" for="submit-search">Vyhledej!</label>
+                        <button type="submit" id="submit-search" name="submit-search">vyhledat <i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Děkujeme za příspěvek!</h1>
+        <section class="vyhledavani-seznam">
+            <h2 id="h2-nadpis-tym">Vážíme si vašeho inputu.</h2>
+            <h3 id="h3-nadpis-tym">Váš tým ČZU Games:</h3>
+            <!-- ul nesetrideny, ol setrideny-->
+            <ul>
+                <li>Martin Holava</li>
+                <li>Josef Malzer</li>
+                <li>Sarah Štědronská</li>
+            </ul>
+        </section>
+
+    <!-- popis webu -->
+    <div class="popis">
+        <article>
+            <header>
+                <h2 style="text-align: center; padding-top: 1.5rem;">Herní web ČZU!</h2>
+            </header>
+            <p>Český herní web České zemědělské univerzity v Praze, který se soustředí na hry pro PC, PlayStation 5, PlayStation 4, Xbox Series X, Xbox Series S, Xbox One, Nintendo Switch, 3DS, PlayStation VR, Android a iOS. Pro všechny platformy nabízíme recenze, preview, videorecenze i pravidelné novinky.
+            </p>
+            <p>Na Games.cz najdete i pravidelné testy a novinky z oblasti hardwaru, podcasty, rozsáhlou databázi her a speciály k očekávaným hrám ze sérií jako Assassin's Creed, Call of Duty, Grand Theft Auto, The Legend of Zelda, Doom, Final Fantasy, Kingdom Come: Deliverance, Red Dead Redemption, BioShock, The Elder Scrolls, Baldur’s Gate, Crusader Kings, nebo FIFA.      
+            </p>
+        </article>
+        </div>
+    </main>
+    
+    <!-- patička -->
+    <footer>
+        <h3>© STUDENTSKÝ PROJEKT</h3>
+    </footer>
+
+</body>
+</html>

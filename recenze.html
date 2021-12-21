@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<!-- hlavička -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="CZU Games herní web o zpravodajství z virtuálního světa!">
+    <meta name="keywords" content="CZU, games, hry">
+    <meta name="author" content="Holava + Malzer + Štědronská">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CZU Games</title>
+    <link href="css/reset.css" type="text/css" rel="stylesheet">
+    <!-- css pro ikonu burger menu a ikonu vyhledavani-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <!-- ovladani burger menu -->
+    <script src="js/javascript.js"></script>
+</head>
+
+<!-- hlavní obsah -->
+<body>
+    <header>
+        <nav>
+            <!-- navigace -->
+            <div class="topnav" id="myTopnav">
+                <a href="recenze.html" class="active">Recenze</a>
+                <a href="index.html">Úvod</a>
+                <a href="novinky.html">Novinky</a>            
+                <a href="redakce.html">Redakce</a>
+                <a href="kontakty.html">Kontakty</a>
+                <!-- burger menu -->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+
+                <!-- vyhledavaci tlacitko -->
+                <div class="search-container">
+                    <form action="vyhledani.html">
+                        <input type="text" placeholder="Vyhledej..." name="search">
+                        <label class="btn-submit-search" for="submit-search">Vyhledej!</label>
+                        <button type="submit" id="submit-search" name="submit-search">vyhledat <i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+    <h1>Recenze</h1>
+    <section class="obsah">
+        <div class="recenze">
+           <article>
+                <header>
+                    <h2 class="h2-mimo-index" id="clanek_r_1">Recenze: Deathloop</h2>
+                </header>
+                <p>
+                    Hry od studia Arkane v sobě tradičně mají takový humorný paradox.
+                    V Dishonored dostanete do ruky nůž a nadpřirozené schopnosti, společně s tím vám ale hra řekne,
+                    že jestli chcete vidět ten hezčí konec, nesmíte nikoho zabít. To stejné dělá vesmírný Prey,
+                    kde si tělo vylepšíte zábavnými mimozemskými mutacemi – pokud ale chcete vidět dobrý konec,
+                    vlastně je nikdy pořádně nepoužijete. A jak je na tom nejnovější Deathloop? No… abyste hru dohráli,
+                    musíte vzít svoje super cool hračky a zabít úplně všechny…
+                </p>
+           </article>
+           <figure>
+               <img src="pics/DEATHLOOP-800x500.jpg" alt="Titulka hry Deathloop" width="800" height="500">
+               <figcaption class="figcap">Titulka hry Deathloop</figcaption>
+           </figure>
+        </div>
+
+        <div class="komentare">
+            <!-- pridani komentare -->
+            <h3 class="h3-mimo-index">Přidejte komentář:</h3>
+            <div class="komentare-vnitrni">
+                <!-- formular pro odeslani -->
+                <form class="formular" action="komentare.html" method="POST">
+                    <label for="jmeno_c3">Zadejte jméno:</label><br>
+                    <input type="text" id="jmeno_c3" name="jmeno"><br>
+                    <label for="komentar-text_c3">Zadejte svůj komentář:</label><br>
+                    <input type="text" id="komentar-text_c3" name="komentar-text"><br>
+                    <input class="btn-komentar" type="submit" name="submit" value="Odeslat">
+                </form>
+            </div>
+            <!-- komentare uzivatelu -->
+            <h3 class="h3-mimo-index">Komentáře čtenářů:</h3>
+            <div class="komentare-vnitrni">
+                <!-- komentar #1 -->
+                <div class="komentare-vnitrni-uzivatel">
+                    <img class="avatar" src="pics/avatar.jpg" alt="avatar" width="32" height="32">
+                    <h4>FrantaPepaJednicka</h4>
+                    <h4>1.12.2021, 12:15 napsal:</h4>
+                </div>
+                <!-- rozdeleni mezi jmenem uzivatele a jeho komentarem -->
+                <div class="komentare-vnitrni-predel"><p></p></div>
+                <div class="komentare-vnitrni-komentar">
+                    <p>za me deafthlopo rozhoden hroztan hra, fuj korprocaim!!!!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- prazdne misto jako vizualni rozdelovac -->
+        <div class="komentare-predel-mezi-clanky">
+            <p></p>
+        </div>
+
+        <div class="recenze">
+            
+            <article>
+                <header>
+                    <h2 class="h2-mimo-index" id="clanek_r_2">Recenze-mini: Rustler</h2>
+                </header>
+                <p>
+                    Pamatujete ještě staré díly GTA s pohledem shora? Tak si ho představte zasazený do středověku
+                    s o něco modernější grafikou, zbytečně překombinovaným ovládáním a máte hodně dobrou představu,
+                    jak se hraje Rustler. Bardi tu rapují, budovy zdobí tagy místních loupeživých band a muže zákona setřesete tak,
+                    že si necháte přemalovat koně. Zkrátka klasika, jen možná až moc velká na to, abyste u ní chtěli vydržet až do konce…
+                    Nebo k ní vůbec zasednout. Fanouškům nostalgických výletů a středověku by se ale Rustler líbit i přes to mohl!
+                </p>
+            </article>
+            <figure>
+              <img src="pics/Rustler-800x500.png" alt="Titulka hry Rustler" width="800" height="500">
+              <figcaption class="figcap">Titulka hry Rustler</figcaption>
+          </figure>
+        </div>
+        <div class="komentare">
+            <!-- pridani komentare -->
+            <h3 class="h3-mimo-index">Přidejte komentář:</h3>
+            <div class="komentare-vnitrni">
+                <!-- formular pro odeslani -->
+                <form class="formular" action="komentare.html" method="POST">
+                    <label for="jmeno_c4">Zadejte jméno:</label><br>
+                    <input type="text" id="jmeno_c4" name="jmeno"><br>
+                    <label for="komentar-text_c4">Zadejte svůj komentář:</label><br>
+                    <input type="text" id="komentar-text_c4" name="komentar-text"><br>
+                    <input class="btn-komentar" type="submit" name="submit" value="Odeslat">
+                </form>
+            </div>
+                <!-- komentare uzivatelu -->
+                <h3 class="h3-mimo-index">Komentáře čtenářů:</h3>
+                <div class="komentare-vnitrni">
+                    <!-- komentar #1 -->
+                    <div class="komentare-vnitrni-uzivatel">
+                        <img class="avatar" src="pics/avatar.jpg" alt="avatar" width="32" height="32">
+                        <h4>Petr Novák</h4>
+                        <h4>8.12.2021, 05:55 napsal:</h4>
+                    </div>
+                    <!-- rozdeleni mezi jmenem uzivatele a jeho komentarem -->
+                    <div class="komentare-vnitrni-predel"><p></p></div>
+                    <div class="komentare-vnitrni-komentar">
+                        <p>Těším se až si zahraju!</p>
+                    </div>
+                
+
+                <!-- vizualni predel mezi komentari -->
+                <div class="komentare-vnitrni-predel-2"><p></p></div>
+
+                <div class="komentare-vnitrni">
+                    <!-- komentar #2 -->
+                    <div class="komentare-vnitrni-uzivatel">
+                        <img class="avatar" src="pics/avatar.jpg" alt="avatar" width="32" height="32">
+                        <h4>kockopes</h4>
+                        <h4>7.12.2021, 18:32 napsal:</h4>
+                    </div>
+                    <!-- rozdeleni mezi jmenem uzivatele a jeho komentarem -->
+                    <div class="komentare-vnitrni-predel"><p></p></div>
+                    <div class="komentare-vnitrni-komentar">
+                        <p>Vypadá to zajímavě, co si budem</p>
+                    </div>
+                </div>
+
+                <!-- vizualni predel mezi komentari -->
+                <div class="komentare-vnitrni-predel-2"><p></p></div>
+
+                <div class="komentare-vnitrni">
+                    <!-- komentar #3 -->
+                    <div class="komentare-vnitrni-uzivatel">
+                        <img class="avatar" src="pics/avatar.jpg" alt="avatar" width="32" height="32">
+                        <h4>Hana Gazarovová</h4>
+                        <h4>6.12.2021, 14:05 napsala:</h4>
+                    </div>
+                    <!-- rozdeleni mezi jmenem uzivatele a jeho komentarem -->
+                    <div class="komentare-vnitrni-predel"><p></p></div>
+                    <div class="komentare-vnitrni-komentar">
+                        <p>
+                            Těšila jsem se na podobnou hru, ta ale stále nevycházela.
+                            Naštěstí tohlencto studio nepolevilo a pustilo se do práce,
+                            takže mám opět co hrát!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+    
+    <footer>
+        <h3>© STUDENTSKÝ PROJEKT</h3>
+    </footer>
+
+</body>
+</html>

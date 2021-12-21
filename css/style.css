@@ -1,0 +1,544 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+/* pseudo trida pro pouziti po celem dokumentu */
+:root {
+  --font-size: 1.33rem;
+  --dark-red: rgb(113,0,0);
+  --def-padding: 1rem;
+}
+
+/* zakladni prvky */
+body {
+  /*font-family: 'Roboto Condensed', sans-serif;*/
+  font-family: 'Roboto', sans-serif;
+  margin: auto;
+  padding: 2rem 2rem 0rem 2rem;
+}
+
+main {
+  box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.075), -30px 0px 40px rgba(0, 0, 0, 0.075);
+  background-color: #eee;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-align: center;
+  background-color: var(--dark-red);
+  color: white;
+  padding: 1rem 0;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 1.9rem;
+  padding: 0 1rem 0 1rem;
+  width: 75%;
+  margin: 0 auto;
+  color: black;
+  background-color: white;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: var(--font-size);
+  text-align: center;
+  color: white;
+  background-color: var(--dark-red)
+}
+
+ul {
+  padding: 2rem 0;
+  color: black;
+  background-color: #eee;
+}
+
+ol {
+  text-align: center;
+  font-size: var(--font-size);
+  color: black;
+  background-color: #eee;
+}
+
+li {
+  text-align: center;
+  color: black;
+  background-color: #eee;
+}
+
+button {
+  color: black;
+  background-color: white;
+}
+
+aside {
+  /*float: absolute;*/
+  float: right;
+  position: absolute;
+  right: 2rem;
+  
+  padding: var(--def-padding);
+  background-color: var(--dark-red);
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  padding: 0.5rem;
+  border: 2px solid var(--dark-red);
+  border-radius: 3px;
+  background-color: white;
+}
+
+a:hover {
+  background-color: var(--dark-red);
+  color: white;
+}
+
+img {
+  /* proti layout jumpu */
+  max-width: 100%; 
+  height: auto;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  padding: var(--def-padding);
+}
+
+p {
+  padding: 1.5rem;
+  text-align: left;
+  width: 80%;
+  margin: 0 auto;
+  color: black;
+  background-color: #eee;
+}
+
+figure {
+  text-align: center;
+  padding-bottom: var(--def-padding);
+}
+
+footer {
+  background-color: var(--dark-red);
+  color: white;
+  text-align: center;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+#h2-nadpis-tym {
+  text-align: center;
+  padding-top: 3rem;
+}
+
+#h3-nadpis-tym {
+  padding-top: 2rem;
+  background-color: #eee;
+  color: black;
+}
+
+#vyhledani-h2 {
+  padding-top: 5rem;
+  text-align: center;
+}
+
+/* redakce -> kontakty */
+#kontakt_1 *, #kontakt_3 * {
+  color: black;
+  background-color: #eee;
+  padding-bottom: var(--def-padding);
+}
+
+#kontakt_2 * {
+  background-color: var(--dark-red);
+  color: white;
+  padding-bottom: var(--def-padding);
+}
+
+
+/* zmena vlastnosti atributu trid */
+  /* section stranky */
+.obsah {
+  background-color: var(--dark-red);
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+.obsah p {
+  background-color: #eee;
+}
+
+  /* obsah -> clanky */
+.novinka {
+  background-color: #eee;
+  width: 50%;
+  flex-grow: 1;
+}
+
+.novinka-clanky {
+  background-color: #eee;
+  width: 100%;
+  flex-grow: 1;
+}
+
+  /* obsah -> recenze */
+.recenze {
+  background-color: #eee;
+  width: 50%;
+  flex-grow: 1;
+}
+
+.recenze-clanky {
+  background-color: #eee;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.h2-mimo-index {
+  padding-top: var(--def-padding);
+  color: black;
+  background-color: #eee;
+}
+
+.h3-mimo-index {
+  padding: var(--def-padding);
+  color: white;
+  background-color: var(--dark-red);
+}
+  /* popis tlacitka pro vyhledavani */
+.btn-submit-search {
+  color: white;
+  position: absolute;
+  right: 99999px;
+}
+
+/* zakladni struktura komentar divu */
+.komentare {
+  color: black;
+  /*visibility: hidden;
+  display: none;*/
+}
+
+.komentare p {
+  background-color: unset;
+}
+
+.komentare-predel-mezi-clanky {
+  width: 100%;
+}
+
+.komentare-predel-mezi-clanky p {
+  background-color: var(--dark-red);
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.komentare-vnitrni {
+  background-color: #ccc;
+  padding-top: var(--def-padding);
+}
+
+/* pridani komentare uzivatelem */
+.komentare-vnitrni-uzivatel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* lajna pod jmenem */
+.komentare-vnitrni-predel {
+  height: 1px;
+  background-color: var(--dark-red);
+  margin: 0 2rem;
+}
+
+/* tlustsi lajna rozdelujici samotne komentare */
+.komentare-vnitrni-predel-2 {
+  height: 4px;
+  background-color: var(--dark-red);
+  margin-bottom: var(--def-padding);
+}
+
+/* text komentare pod jmenem uzivatele */
+.komentare-vnitrni-komentar {
+  margin: -0.5rem 0;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  margin: 0;
+  padding: 0;
+}
+
+.formular {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 1rem 1rem 1rem;
+}
+
+.formular label {
+  font-weight: bold;
+}
+
+.formular input {
+  width: 100%;
+  font-size: 1.5rem;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.formular input.komentar-text {
+  color: #0F0;
+}
+
+  /* tlacitko pridani komentare */
+.btn-komentar {
+  cursor: pointer;
+  width: 50%;
+  padding: 0.5rem 0px 0.5rem;
+  background-color: var(--dark-red);
+  margin-bottom: 0;
+  text-align: center;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+.btn-komentar:hover { 
+  color: white;
+  background-color: var(--dark-red);
+  border: 2px solid white;
+}
+
+  /* section v vyhledani.html */
+.vyhledavani-seznam {
+  background-color: #eee;
+  color: black;
+}
+
+  /* section v redakce.html */
+.clenove {
+  text-align: center;
+  padding-bottom: var(--def-padding);
+}
+
+.clenove p, h2 {
+  text-align: center;
+  background-color: #eee;
+}
+
+.kontakt {
+  text-align: center;
+  padding-bottom: var(--def-padding);
+}
+
+.kontakt h3 {
+  padding: 1rem 0 1rem 0;
+}
+
+.kontakt li {
+  padding-bottom: 0.5rem;
+}
+
+.figcap {
+  text-align: right;
+  width: 85%;
+  color: black;
+  background-color: #eee;
+}
+
+/* tlacitko na prechod k obsahu*/
+.btn { 
+  padding: 0.5rem 0px 0.5rem;
+  background-color: var(--dark-red);
+  margin-bottom: 0;
+  text-align: center;  
+}
+
+.btn-text {
+  color: white;
+  background-color: var(--dark-red);
+  font-size: 1rem; /*1.15*/
+  font-weight: bold;
+  padding: 0.5rem;
+  border: 2px solid rgb(255, 255, 255);
+  float: none;
+  display: inline-block;
+}
+
+.btn-text:hover {
+  color: black;
+  background-color: white;
+  border: 2px solid black;
+}
+
+  /* popis webu pred patickou */
+.popis * {
+  background-color: white;
+  color: black;
+}
+
+footer article {
+  background-color: white;
+  color: black;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: var(--dark-red);
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  background-color: var(--dark-red);
+  text-align: center;
+  padding: var(--def-padding);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.topnav a:hover {
+  background-color: #aaa;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active:hover {
+  background-color: #aaa;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 0.5rem 0.75rem;
+  margin-top: 0.5rem;
+  margin-right: var(--def-padding);
+  background: #ddd;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #aaa;
+}
+
+.topnav .icon {
+  display: none;
+  color: black;
+  background-color: #ddd;
+}
+
+/* vyjizdeci menu nav baru */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+
+  .topnav .search-container {
+    float: none;
+    width: 100%;
+  }
+
+  .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: right;
+    width: 100%;
+    margin: 0;
+    padding: var(--def-padding);
+  }
+
+  .topnav input[type=text] {
+    text-align: left;
+    border: 1px solid #ccc;
+    padding: 3% 0 3% 3%;
+    width: 97%;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .obsah {
+    display: block;
+  }
+  
+  .novinka {
+    width: 100%;
+  }
+
+  .recenze {
+    width: 100%;
+  }
+}
+
+/* vypnuti vyjizdeciho menu */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+  }
+
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
+
+/* stranky sirsi, pro desktop */
+@media(min-width: 601px) {
+  .novinka {
+    display: grid;
+    /*justify-content: end; horizontalni srovnani*/
+    align-content: space-between; /*vertikalni srovnani*/
+  }
+
+  .recenze {
+    display: grid;
+    align-content: space-between;
+  }
+
+  .komentare {
+    width: 100vw;
+  }
+}
+
+@media(min-width: 960px) {
+  #vyhledani-h2 {
+    padding-top: 1rem;
+  }
+}
